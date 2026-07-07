@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tratamentos — Espaço Belavive</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    .produtos-hero {
+      padding: 140px 0 60px;
+      text-align: center;
+      background: rgba(233, 201, 207, 0.1);
+    }
+    .btn-voltar-home {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+      color: var(--rose-d);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .produto-detalhe-sec {
+      padding: 80px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      scroll-margin-top: 100px; 
+    }
+    .produto-detalhe-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .produto-detalhe-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="bg-shapes" aria-hidden="true">
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+  </div>
+
+
+  <header>
+    <div class="nav-logo">
+      <img src="belavive.jpeg" alt="Logo Belavive" class="logo-img-centro">
+      <div class="nav-logo-text">
+        BELAVIVE
+        <span>Clínica de Estética</span>
+      </div>
+    </div>
+    <nav aria-label="Navegação principal">
+      <ul role="list">
+        <li><a href="index.html#inicio">Início</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#servicos">Serviços</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+        <li><a href="https://wa.me/5548996965944" class="btn-nav" target="_blank" rel="noopener">Agendar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="produtos-hero">
+    <div class="container">
+      <a href="index.html" class="btn-voltar-home" style="color: rgb(0, 0, 0) !important;">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+        Voltar para o Início
+      </a>
+      <h1 class="hero-title" style="font-size: 2.5rem; margin-top: 10px;">Conheça Nossos <em>Serviços</em></h1>
+      <p class="section-sub" style="margin: 15px auto 0; max-width: 600px;">
+        Descubra detalhes sobre cada procedimento estético facial e corporal que preparamos com exclusividade para você.
+      </p>
+    </div>
+  </section>
+
+
+  <main>
+    
+    <!-- 1. Massagem Modeladora -->
+    <section class="produto-detalhe-sec" id="massagem-modeladora">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="massagem_model.jpeg" alt="Massagem modeladora" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Massagem Modeladora</h2>
+            <p>A massagem modeladora utiliza manobras rápidas e intensas sobre a pele, utilizando pressões que buscam atingir as camadas de gordura profunda.</p>
+            <p style="margin-top: 10px;"><strong>Benefícios:</strong> Auxilia na redução de medidas, melhora a circulação sanguínea, ajuda na modelagem do contorno corporal e atua diretamente na diminuição da retenção de líquidos.</p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20Massagem%20Modeladora" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Pós-operatório -->
+    <section class="produto-detalhe-sec" id="pos-operatorio">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="imagem_pos.png" alt="pos operatorio" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Drenagem pós-operatório</h2>
+            <p>Tratamento indispensável conduzido de forma extremamente suave e técnica para reabilitar tecidos traumatizados por cirurgias plásticas ou intervenções médicas.</p>
+            <p style="margin-top: 10px;"><strong>Benefícios:</strong> Previne a formação de fibroses e aderências, diminui consideravelmente os edemas (inchaços), alivia dores pós-cirúrgicas e acelera o processo natural de cicatrização da pele.</p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20Pós-operatório" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Liberação Miofascial -->
+    <section class="produto-detalhe-sec" id="liberacao-miofascial">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="liberacao_mio.jpeg" alt="miofacial" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Liberação Miofascial</h2>
+            <p>Técnica manual que aplica pressão em pontos específicos do corpo para relaxar e desatar os nós da fáscia muscular (tecido que envolve nossos músculos).</p>
+            <p style="margin-top: 10px;"><strong>Benefícios:</strong> Alívio imediato de dores musculares crônicas, redução de tensões acumuladas pelo estresse, aumento visível da flexibilidade e melhora no rendimento físico.</p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20Liberação%20Miofascial" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Limpeza de Pele -->
+    <section class="produto-detalhe-sec" id="limpeza-de-pele">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="limpeza_pele.jpeg" alt="Limpeza de pele" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Limpeza de Pele</h2>
+            <p>Procedimento facial profundo focado em restabelecer o equilíbrio e a pureza natural da pele do rosto através de etapas rigorosas de assepsia e hidratação.</p>
+            <p style="margin-top: 10px;"><strong>Benefícios:</strong> Remoção completa de impurezas, cravos (comedões) e miliums, eliminação de células mortas, desobstrução dos poros e renovação total do viço cutâneo.</p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20Limpeza%20de%20Pele" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Radiofrequência -->
+    <section class="produto-detalhe-sec" id="radiofrequencia">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="radio_freq.jpeg" alt="radio" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Radiofrequência</h2>
+            <p>Tecnologia avançada não invasiva que eleva a temperatura controlada do tecido subcutâneo para estimular as fibras de sustentação da pele.</p>
+            <p style="margin-top: 10px;"><strong>Benefícios:</strong> Estimula de forma massiva a produção de colágeno e elastina, combate a flacidez facial e corporal de maneira eficiente e suaviza rugas e linhas finas.</p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20Radiofrequência" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Botox -->
+    <section class="produto-detalhe-sec" id="botox">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="botox_tox.webp" alt="botox" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Botox</h2>
+            <p>Aplicação estratégica voltada ao relaxamento temporário dos músculos faciais responsáveis pelas marcas mecânicas do tempo.</p>
+            <p style="margin-top: 10px;"><strong>Benefícios:</strong> Suavização drástica de linhas de expressão na testa, pés de galinha e glabela, proporcionando um aspecto muito mais descansado, leve e completamente natural.</p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20Botox" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. detoxcorporal -->
+    <section class="produto-detalhe-sec" id="detox-corporal">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="detox.jpeg" alt="detox" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Detox Corporal</h2>
+            <p>Massagem com movimentos altamente precisos, lentos e suaves direcionados aos gânglios linfáticos para drenar fluidos em excesso.</p>
+            <p style="margin-top: 10px;"><strong>Benefícios:</strong> Reduz imediatamente a retenção hídrica (inchaço), auxilia na eliminação natural de toxinas do organismo e melhora o sistema imunitário e circulatório.</p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20Detox%20corporal" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Peeling Renovador -->
+    <section class="produto-detalhe-sec" id="peeling">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="pelling.jpeg" alt="pelling" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Peeling Descamativo</h2>
+            <p>Tratamento baseado na descamação controlada da pele para induzir o corpo a construir uma nova camada dérmica totalmente saudável.</p>
+            <p style="margin-top: 10px;"><strong>Benefícios:</strong> Altamente focado na renovação celular, clareamento gradual de manchas (como melasmas e marcas de acne) e uniformização da textura da pele.</p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20Peeling" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Tratamento d gordura -->
+    <section class="produto-detalhe-sec" id="gordura-localizada">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="gordura.jpg" alt="gordura" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Tratamento de Gordura localizada</h2>
+            <p>Procedimento de alta tecnologia focado na destruição das células adiposas em áreas difíceis, como abdômen, flancos e culotes.</p>
+            <p style="margin-top: 10px;"><strong>Benefícios:</strong> Reduz drasticamente as medidas corporais, elimina o acúmulo de gordura resistente a dietas, melhora o contorno da silhueta e promove uma autoestima renovada.</p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20Tratamento%20de%20Gordura%20localizada" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Luz pulsada -->
+    <section class="produto-detalhe-sec" id="Luz-Pulsada">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="luz_pulsada.jpg" alt="Luz Pulsada" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Luz Pulsada</h2>
+            <p>Tratamento estético versátil que utiliza feixes de luz para atingir diferentes camadas da pele, ideal para suavizar manchas, sardas, vasinhos faciais e estimular o colágeno.</p>
+            <p style="margin-top: 10px;"><strong>Benefícios:</strong>Clareia manchas de forma rápida, uniformiza o tom da pele, reduz linhas finas e estimula a firmeza com recuperação imediata.</p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20Design%20de%20Sobrancelhas" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Preenchimento labial -->
+    <section class="produto-detalhe-sec" id="preenchimento-labial">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="labial.jpeg" alt="Preenchimento Labial" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Preenchimento labial</h2>
+            <p>
+              O preenchimento labial é um procedimento realizado com ácido hialurônico para aumentar o volume, definir o contorno, corrigir assimetrias e promover hidratação. O tratamento é personalizado para valorizar a beleza natural dos lábios com resultados harmoniosos.
+              </p>
+              
+              <p style="margin-top: 10px;">
+              <strong>Benefícios:</strong> Aumenta o volume dos lábios de forma equilibrada, define o contorno, melhora a simetria, suaviza linhas ao redor da boca, proporciona hidratação intensa e devolve firmeza, resultando em lábios mais bonitos, saudáveis e com aparência natural.
+              </p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20Preenchimento%20Labial" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. banho de lua -->
+    <section class="produto-detalhe-sec" id="banho_lua">
+      <div class="container">
+        <div class="produto-detalhe-grid">
+          <div class="sobre-img-wrap">
+            <img src="descolorir.webp" alt="banho de lua" style="display: block; margin: 0 auto; width: 80%; height: 350px; object-fit: cover; border-radius: 20px;">
+          </div>
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 10px;"></div>
+            <h2 class="section-title" style="font-size: 2rem; margin-bottom: 15px;">Banho de Lua</h2>
+            <p>Ritual estético focado na descoloração segura dos pelos corporais, associado a técnicas de proteção da pele, esfoliação e nutrição.</p>
+            <p style="margin-top: 10px;"><strong>Benefícios:</strong> Garante pelos dourados, camuflados e uniformes sem desconforto, remove células mortas e promove uma pele profundamente macia, iluminada e acetinada.</p>
+            <a href="https://wa.me/5548996965944?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20Banho%20de%20Lua" class="btn-primary" style="margin-top: 25px;" target="_blank" rel="noopener">Agendar Esse Tratamento</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+ 
+  <footer role="contentinfo" style="margin-top: 0;">
+    <div class="container" style="text-align: center; padding: 40px 0;">
+      <p>© 2026 Espaço Belavive. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
