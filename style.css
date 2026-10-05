@@ -1149,7 +1149,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* Oculta botão hambúrguer no Desktop */
 .nav-toggle {
   display: none;
   background: transparent;
@@ -1157,15 +1156,14 @@ body {
   cursor: pointer;
 }
 
-/* Regras para Celular (Mobile) */
 @media (max-width: 850px) {
   .nav-menu,
   .nav-actions {
-    display: none; /* Esconde menu normal no celular */
+    display: none; 
   }
 
   .nav-toggle {
-    display: block; /* Exibe hambúrguer no celular */
+    display: block; 
   }
 
   .nav-menu.active {
