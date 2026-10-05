@@ -1088,3 +1088,99 @@ body {
     height: 200px;
   }
 }
+
+/* Header / Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #d4a373;
+}
+
+.btn-agendar {
+  background-color: #f3d8d6;
+  color: #333333;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Oculta botão hambúrguer no Desktop */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Regras para Celular (Mobile) */
+@media (max-width: 850px) {
+  .nav-menu,
+  .nav-actions {
+    display: none; /* Esconde menu normal no celular */
+  }
+
+  .nav-toggle {
+    display: block; /* Exibe hambúrguer no celular */
+  }
+
+  .nav-menu.active {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active .nav-list {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
