@@ -52,30 +52,41 @@
   </div>
 
   <!-- ========== HEADER ========== -->
-  <header>
-    <div class="nav-logo">
-      <img src="logoo.jpeg" alt="Logo Belavive" class="logo-img-centro">
-      <div class="nav-logo-text">
-        BELAVIVE
-        <span>Clínica de Estética</span>
+<header class="navbar">
+    <div class="container nav-container">
+      <!-- Logo à esquerda -->
+      <a href="#inicio" class="nav-logo">
+        <img src="assets/logo.png" alt="Belavive Logo" class="logo-img" />
+        <div class="nav-logo-text">
+          BELAVIVE
+          <span>CLÍNICA DE ESTÉTICA</span>
+        </div>
+      </a>
+
+      <!-- Menu no meio/direita (no desktop) -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">INÍCIO</a></li>
+          <li><a href="#sobre" class="nav-link">SOBRE</a></li>
+          <li><a href="produtos.html" class="nav-link">SERVIÇOS</a></li>
+          <li><a href="#galeria" class="nav-link">GALERIA</a></li>
+          <li><a href="#depoimentos" class="nav-link">DEPOIMENTOS</a></li>
+          <li><a href="#contato" class="nav-link">CONTATO</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão AGENDAR destacado à direita -->
+      <div class="nav-actions">
+        <a href="https://wa.me/5548996965944" target="_blank" class="btn-agendar">AGENDAR</a>
       </div>
+
+      <!-- Ícone Hambúrguer (visível só no celular) -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
-
-    <nav aria-label="Navegação principal">
-      <ul role="list">
-        <li><a href="#inicio" aria-label="Início">Início</a></li>
-        <li><a href="#sobre" aria-label="Sobre nós">Sobre</a></li>
-        <li><a href="#servicos" aria-label="Serviços">Serviços</a></li>
-        <li><a href="#galeria" aria-label="Galeria">Galeria</a></li>
-        <li><a href="#depoimentos" aria-label="Depoimentos">Depoimentos</a></li>
-        <li><a href="#contato" aria-label="Contato">Contato</a></li>
-        <li><a href="https://wa.me/5548996965944" class="btn-nav" aria-label="Agendar pelo WhatsApp" target="_blank" rel="noopener">Agendar</a></li>
-      </ul>
-    </nav>
-
-    <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
   </header>
 
   <!-- ========== HERO ========== -->
